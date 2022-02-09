@@ -1,5 +1,7 @@
 def summation(num)
-  (1..num).sum
+  if num < 1
+    return "Number must be a positive integer greater than 0"
+  else
+    (1..num).sum
+  end
 end
-
-puts summation(3)
